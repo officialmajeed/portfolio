@@ -1,0 +1,4 @@
+[build]
+  base = "majeed-portfolio-main"
+  command = "npm run build"
+  publish = "majeed-portfolio-main/dist"
