@@ -1,0 +1,11 @@
+{
+  "name": "majeed-portfolio-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix majeed-portfolio-main",
+    "build": "npm run build --prefix majeed-portfolio-main",
+    "install": "npm install --prefix majeed-portfolio-main",
+    "lint": "npm run dev --prefix majeed-portfolio-main",
+    "preview": "npm run preview --prefix majeed-portfolio-main"
+  }
+}

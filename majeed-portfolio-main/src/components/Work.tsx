@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
-// import WorkImage from "./WorkImage";
+
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
@@ -9,21 +9,18 @@ const projects = [
     title: "Customer Transaction Prediction",
     category: "Classification Model",
     tools: "Python, Scikit-Learn, Pandas",
-    image: "/images/Solidx.png",
   },
   {
     id: 2,
     title: "Flight Fare Prediction",
     category: "Regression Model",
     tools: "Python, Machine Learning, Data Analytics",
-    image: "/images/radix.png",
   },
   {
     id: 3,
     title: "Rice Leaf Disease Classification",
     category: "Deep Learning (CNN)",
     tools: "TensorFlow, PyTorch, Computer Vision",
-    image: "/images/bond.png",
   },
 ];
 
