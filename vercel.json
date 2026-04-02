@@ -1,5 +1,6 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "buildCommand": "cd majeed-portfolio-main && npm install && npm run build",
+  "outputDirectory": "majeed-portfolio-main/dist",
   "framework": "vite"
 }
+
