@@ -11,7 +11,7 @@ const Navbar = () => {
     let links = document.querySelectorAll(".header ul a");
     links.forEach((elem) => {
       let element = elem as HTMLAnchorElement;
-      element.addEventListener("click", (e) => {
+      element.addEventListener("click", () => {
         if (window.innerWidth > 1024) {
           const sectionId = element.getAttribute("data-href");
           if (sectionId) {
