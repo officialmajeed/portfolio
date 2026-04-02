@@ -7,5 +7,8 @@
     "install": "npm install --prefix majeed-portfolio-main",
     "lint": "npm run dev --prefix majeed-portfolio-main",
     "preview": "npm run preview --prefix majeed-portfolio-main"
+  },
+  "dependencies": {
+    "three-mesh-bvh": "^0.9.9"
   }
 }

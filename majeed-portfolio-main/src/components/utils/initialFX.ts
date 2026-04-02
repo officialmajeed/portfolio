@@ -1,10 +1,8 @@
-import { SplitText } from "gsap-trial/SplitText";
+import { FreeSplitText as SplitText } from "./freeSplitText";
 import gsap from "gsap";
-import { smoother } from "../Navbar";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
-  smoother.paused(false);
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
     backgroundColor: "#0a0e17",
@@ -20,7 +18,7 @@ export function initialFX() {
     }
   );
   gsap.fromTo(
-    landingText.chars,
+    landingText.chars as any,
     { opacity: 0, y: 80, filter: "blur(5px)" },
     {
       opacity: 1,
@@ -37,7 +35,7 @@ export function initialFX() {
 
   var landingText2 = new SplitText(".landing-h2-info", TextProps);
   gsap.fromTo(
-    landingText2.chars,
+    landingText2.chars as any,
     { opacity: 0, y: 80, filter: "blur(5px)" },
     {
       opacity: 1,
@@ -76,11 +74,11 @@ export function initialFX() {
   var landingText4 = new SplitText(".landing-h2-1", TextProps);
   var landingText5 = new SplitText(".landing-h2-2", TextProps);
 
-  LoopText(landingText2, landingText3);
-  LoopText(landingText4, landingText5);
+  LoopText(landingText2 as any, landingText3 as any);
+  LoopText(landingText4 as any, landingText5 as any);
 }
 
-function LoopText(Text1: SplitText, Text2: SplitText) {
+function LoopText(Text1: any, Text2: any) {
   var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
   const delay = 4;
   const delay2 = delay * 2 + 1;
@@ -134,3 +132,4 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
       1
     );
 }
+
